@@ -1,0 +1,159 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.App{
+    height: 100%;
+    width: 100%;
+    min-width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.imageManager{
+    border-right: 2px solid lightgray;
+    border-top: 0;
+    border-bottom: 0;
+    min-width:300px;
+    width: 20%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.imageView{
+    overflow: auto;
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.imageList{
+    margin-top: 15px;
+}
+
+.imageItem{
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    width: 40px;    
+}
+
+.imageItem h3 {
+    margin: 5px 0;
+}
+
+.imageItem p {
+    margin: 5px 0;
+}
+
+.selectedImageItem{
+    padding: 5px;
+    margin: 5px;
+    background-color: lightblue;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectedImageItem h3 {
+    margin: 5px 0;
+}
+
+.selectedImageItem p {
+    margin: 5px 0;
+}
+
+.selectedImageItem plaintext {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.uploadImageForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    width: 300px;
+}
+
+.uploadImageForm textarea{
+    height: 80px;
+}
+
+.uploadImageForm button{
+    align-self: center;
+}
+
+.commentForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: flex-start;
+    height: 150px;
+    width: 300px;
+}
+
+.commentForm .comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.commentForm textarea{
+    height: 60px;
+}
+
+.commentForm p{
+    font-style: italic;
+    font-size: 12px;
+}
+
+.imageToolbar{
+    display: flex;
+    height: 40px;
+    background-color: aliceblue;
+    border-bottom: 2px solid lightblue;
+}
+
+.imageArea{
+    background-color: darkgray;
+    flex-grow: 1;
+    flex-shrink: 0;
+    align-items: center;
+    position: relative;
+}
+
+.imageArea img{
+    object-fit: contain;
+    object-position: left top;
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.mark {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 50%;
+  }

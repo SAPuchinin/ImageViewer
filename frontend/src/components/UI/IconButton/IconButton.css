@@ -1,0 +1,9 @@
+.iconButton{
+    height: 30px;
+    width: 30px;
+    border-radius: 15%;
+    margin: 5px;
+    padding: 1px;
+    border: 1px solid lightblue;
+    background-color: snow;
+}
